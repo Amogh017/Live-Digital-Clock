@@ -1,0 +1,45 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #00000070;
+  }
+  
+  #clock-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+  
+  #clock {
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Animation for glowing text */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
+    }
+    to {
+      text-shadow: 0 0 20px #1abc9c, 0 0 30px #1abc9c;
+    }
+  }
+  
